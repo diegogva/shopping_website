@@ -1,4 +1,6 @@
 <?php
+  
+  /*********** AMAZON SEARCH ***********/
 
   // AWS Access Key ID
   $aws_access_key_id = "access_key";
@@ -72,6 +74,8 @@
 
   // Parse XML string from the request
   $parsed_xml = simplexml_load_string($response);
+
+  /*********** AMAZON SEARCH ***********/
 
   printPage($parsed_xml, $SearchIndex, $Keywords, $Sort, $page_number);
 
